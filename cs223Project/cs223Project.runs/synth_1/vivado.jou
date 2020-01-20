@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 29 03:49:08 2019
+# Process ID: 3496
+# Current directory: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1
+# Command line: vivado.exe -log gameMain.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source gameMain.tcl
+# Log file: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/gameMain.vds
+# Journal file: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source gameMain.tcl -notrace

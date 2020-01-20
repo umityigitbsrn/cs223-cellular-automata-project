@@ -1,0 +1,1280 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Dec 27 19:14:51 2019
+# Process ID: 11916
+# Current directory: C:/Users/umityigitbsrn/Desktop/cs223Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent284 C:\Users\umityigitbsrn\Desktop\cs223Project\cs223Project.xpr
+# Log file: C:/Users/umityigitbsrn/Desktop/cs223Project/vivado.log
+# Journal file: C:/Users/umityigitbsrn/Desktop/cs223Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 818.945 ; gain = 213.996
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncer.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncer.sv
+file delete -force C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncer.sv
+export_ip_user_files -of_objects  [get_files C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/counter20ms.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/counter20ms.sv
+file delete -force C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/counter20ms.sv
+export_ip_user_files -of_objects  [get_files C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneModeTest.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneModeTest.sv
+file delete -force C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneModeTest.sv
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 19:50:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 19:50:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E71A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 20:02:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 20:02:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A53EA
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A53EA
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 20:12:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 20:12:06 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A8A53EA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 20:26:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 20:26:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 20:33:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 20:33:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 20:39:34 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 20:39:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A8A53EA
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+undo
+INFO: [Common 17-17] undo 'set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]'
+close_hw
+set_property top partCMain [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 21:54:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 21:54:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 21:57:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 21:57:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 22:03:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 22:03:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 22:20:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 22:20:33 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn-Basys3-210183A27E54A" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+update_compile_order -fileset sources_1
+close [ open C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv w ]
+add_files C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: partCMain
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2592.414 ; gain = 139.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+WARNING: [Synth 8-7023] instance 'cont' of module 'partCController' has 19 connections declared, but only 18 given [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:43]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+WARNING: [Synth 8-3848] Net rowsOut in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:34]
+WARNING: [Synth 8-3848] Net shcp in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:35]
+WARNING: [Synth 8-3848] Net stcp in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:35]
+WARNING: [Synth 8-3848] Net mr in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:35]
+WARNING: [Synth 8-3848] Net oe in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:35]
+WARNING: [Synth 8-3848] Net ds in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[7]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[6]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[5]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[4]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[3]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[2]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[1]
+WARNING: [Synth 8-3331] design partCMain has unconnected port rowsOut[0]
+WARNING: [Synth 8-3331] design partCMain has unconnected port shcp
+WARNING: [Synth 8-3331] design partCMain has unconnected port stcp
+WARNING: [Synth 8-3331] design partCMain has unconnected port mr
+WARNING: [Synth 8-3331] design partCMain has unconnected port oe
+WARNING: [Synth 8-3331] design partCMain has unconnected port ds
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2646.691 ; gain = 194.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2664.566 ; gain = 211.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2664.566 ; gain = 211.996
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2781.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 2803.637 ; gain = 351.066
+26 Infos, 24 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2803.637 ; gain = 351.066
+close_design
+update_compile_order -fileset sources_1
+close [ open C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv w ]
+add_files C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv
+update_compile_order -fileset sources_1
+set_property top gameMain [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 23:27:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 23:27:39 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 23:29:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 23:29:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 23:34:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 23:34:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 23:38:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 23:38:30 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Dec 27 23:40:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Fri Dec 27 23:40:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: gameMain
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (13#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (14#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+WARNING: [Synth 8-7023] instance 'cont' of module 'partCController' has 19 connections declared, but only 18 given [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (15#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (16#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (17#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (18#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (19#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (20#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (21#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath2' (22#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:46]
+WARNING: [Synth 8-3848] Net plus in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (23#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+WARNING: [Synth 8-689] width (16) of port connection 'score' does not match port width (1) of module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'gameData' (24#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (25#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (26#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2x115' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x115' (27#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (28#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'gameMain' (29#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3331.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3331.113 ; gain = 0.000
+67 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 3331.113 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (13#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (14#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+WARNING: [Synth 8-7023] instance 'cont' of module 'partCController' has 19 connections declared, but only 18 given [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:44]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (15#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (16#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (17#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (18#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (19#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (20#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (21#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath2' (22#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:46]
+WARNING: [Synth 8-3848] Net plus in module/entity partCMain does not have driver. [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (23#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+WARNING: [Synth 8-689] width (16) of port connection 'score' does not match port width (1) of module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'gameData' (24#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (25#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (26#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2x115' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x115' (27#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (28#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'gameMain' (29#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3331.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 3331.113 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 00:09:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Sat Dec 28 00:09:37 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 00:16:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Sat Dec 28 00:16:13 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: gameMain
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (13#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (14#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (15#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (16#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (17#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (18#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (19#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (20#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (21#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath2' (22#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+WARNING: [Synth 8-689] width (1) of port connection 'score' does not match port width (16) of module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:46]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (23#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+WARNING: [Synth 8-689] width (16) of port connection 'score' does not match port width (1) of module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:47]
+INFO: [Synth 8-6155] done synthesizing module 'gameData' (24#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (25#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (26#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2x115' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x115' (27#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (28#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'gameMain' (29#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3474.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3474.488 ; gain = 0.000
+67 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 3474.488 ; gain = 0.000
+refresh_design
+ERROR: [Synth 8-2715] syntax error near ; [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:36]
+Failed to read verilog 'C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv'
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+ERROR: [Synth 8-439] module 'partCMain' not found [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+ERROR: [Synth 8-439] module 'partCMain' not found [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:47]
+ERROR: [Synth 8-6156] failed synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+ERROR: [Synth 8-6156] failed synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (13#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (14#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (15#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (16#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (17#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (18#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (19#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (20#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (21#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath2' (22#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (23#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameData' (24#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (25#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (26#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2x115' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x115' (27#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (28#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'gameMain' (29#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3474.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3486.883 ; gain = 12.395
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 00:30:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Sat Dec 28 00:30:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3602.391 ; gain = 15.449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'gameMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter partB bound to: 2'b01 
+	Parameter partC bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'gameController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'gameData' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter firstState bound to: 3'b001 
+	Parameter secondState bound to: 3'b010 
+	Parameter thirdState bound to: 3'b011 
+	Parameter fourthState bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'partBController' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partBDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partAController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+	Parameter initState bound to: 2'b00 
+	Parameter waitState bound to: 2'b01 
+	Parameter loadState bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'partAController' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partADatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2x4' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2x4' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/decoder2x4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourRegister' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/FourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partADatapath' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partADatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partAMain' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partAMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x2' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister2' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBDatapath' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBDatapath.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partBMain' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partBMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b110 
+	Parameter endMode bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'buttonDebouncerMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'buttonDebouncerMain' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/buttonDebouncerMain.sv:23]
+WARNING: [Synth 8-567] referenced signal 'bDeb1' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb2' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb3' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+WARNING: [Synth 8-567] referenced signal 'bDeb4' should be on the sensitivity list [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (13#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (14#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (15#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (16#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (17#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (18#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (19#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (20#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (21#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath2' (22#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (23#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'gameData' (24#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameData.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (25#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (26#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux2x115' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux2x115' (27#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux2x115.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:93]
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (28#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/SevSeg_4Digit.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'gameMain' (29#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/gameMain.sv:23]
+WARNING: [Synth 8-3331] design gameData has unconnected port load
+WARNING: [Synth 8-3331] design gameData has unconnected port clear
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3602.391 ; gain = 15.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3606.367 ; gain = 19.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3606.367 ; gain = 19.426
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3691.277 ; gain = 104.336
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Dec 28 00:39:05 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Sat Dec 28 00:39:05 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/gameMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 28 01:14:58 2019...

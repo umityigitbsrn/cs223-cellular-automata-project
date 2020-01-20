@@ -1,0 +1,251 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 25 20:25:58 2019
+# Process ID: 16708
+# Current directory: C:/Users/umityigitbsrn/Desktop/cs223Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15676 C:\Users\umityigitbsrn\Desktop\cs223Project\cs223Project.xpr
+# Log file: C:/Users/umityigitbsrn/Desktop/cs223Project/vivado.log
+# Journal file: C:/Users/umityigitbsrn/Desktop/cs223Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 808.922 ; gain = 172.098
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 21:07:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Wed Dec 25 21:07:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 21:14:28 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Wed Dec 25 21:14:28 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 21:28:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Wed Dec 25 21:28:33 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 21:54:21 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Wed Dec 25 21:54:21 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 21:57:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+[Wed Dec 25 21:57:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/partCMain.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: partCMain
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2545.422 ; gain = 4.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'partCMain' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCController' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+	Parameter initState bound to: 3'b000 
+	Parameter loadState bound to: 3'b001 
+	Parameter convert bound to: 3'b010 
+	Parameter oneMode bound to: 3'b011 
+	Parameter twoMode bound to: 3'b100 
+	Parameter threeMode bound to: 3'b101 
+	Parameter fourMode bound to: 3'b111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:67]
+INFO: [Synth 8-6155] done synthesizing module 'partCController' (1#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCController.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'partCDatapath' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux1x2' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux1x2' (2#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux1x2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sixtyFourRegister' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sixtyFourRegister' (3#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/sixtyFourRegister.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'oneMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'oneMode' (4#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/oneMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'twoMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'twoMode' (5#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/twoMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'threeMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'threeMode' (6#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/threeMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fourMode' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'fourMode' (7#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/fourMode.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4x264' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux4x264' (8#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/mux4x264.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCDatapath' (9#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCDatapath.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'doubleArrayConverter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'doubleArrayConverter' (10#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/doubleArrayConverter.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'converter' [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:90]
+INFO: [Synth 8-6155] done synthesizing module 'converter' (11#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/converter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'partCMain' (12#1) [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/sources_1/new/partCMain.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2599.352 ; gain = 58.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2620.203 ; gain = 79.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2620.203 ; gain = 79.145
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Finished Parsing XDC File [C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.srcs/constrs_1/new/contraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2738.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2756.945 ; gain = 215.887
+30 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 2756.945 ; gain = 434.168
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A27E54A
+close_design
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 25 22:24:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 25 22:29:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 25 22:31:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 25 22:31:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed Dec 25 22:31:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Dec 25 22:32:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Dec 25 22:33:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/umityigitbsrn/Desktop/cs223Project/cs223Project.runs/impl_1/runme.log
+open_hw
