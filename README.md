@@ -1,2 +1,3 @@
 # CS223-Cellular_Automata_Project
 
+The main purpose of this project is designing a game with using 64-bit input which is taken from user by using 4 switches on the Basys-3 and using 8x8 matrix in order to display 64-bit. In this game, user plays game with 4 different buttons and uses these buttons to delete all the lights on the 8x8 matrix based on rules that are specified by using creators ID. This game basically represents the cellular automata theory.
